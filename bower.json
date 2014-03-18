@@ -1,8 +1,8 @@
 {
   "name": "adapt-piechart",
   "version": "0.0.1",
-   "repository": "git://github.com/martinsandberg/adapt-piechart-master.git",
-  "homepage": "https://github.com/martinsandberg/adapt-piechart-master",
+   "repository": "git://github.com/MartinSandberg/adapt-piechart-master.git",
+  "homepage": "https://github.com/MartinSandberg/adapt-piechart-master",
   "authors": [
     "Martin Sandberg <martin.sandberg@xtractor.se>"
   ],
