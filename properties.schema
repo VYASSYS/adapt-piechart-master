@@ -1,0 +1,62 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "This component displays an piechart for the provided values.",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties":{
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "full-width",
+      "editorOnly": true
+    },
+    "_items": {
+      "type":"array",
+      "required":false,
+      "title": "Piechart items",
+      "items": {
+        "type":"object",
+        "required":false,
+        "properties":{
+          "title": {
+            "type":"string",
+            "required": false,
+            "default": "",
+            "title": "Piechart display Lable",
+            "inputType": "Text",
+            "validators": [],
+            "translatable": true
+          },
+          "colour": {
+            "type":"string",
+            "required": false,
+            "default": "",
+            "title": "Piechart section colour name(OR code)",
+            "inputType": "Text",
+            "validators": [],
+            "translatable": true
+          },
+          "value": {
+             "type":"number",
+             "required":true,
+             "default":0,
+             "title": "Value",
+             "inputType":"Number",
+             "validators": ["required", "number"]
+          }
+        }
+      }
+    }
+  }
+}
