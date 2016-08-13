@@ -29,7 +29,7 @@
         "type":"object",
         "required":false,
         "properties":{
-          "title": {
+          "name": {
             "type":"string",
             "required": false,
             "default": "",
